@@ -6,9 +6,7 @@ th {
     text-align: left;
     font-size: 20px;
     font-weight: 200;
-    border: none !important; 
-
-
+    border: none !important;
 }
 
 td {
@@ -26,7 +24,37 @@ i:hover {
     color: black;
 }
 
-.sub{
+.sub {
     background: rgb(58, 58, 255);
     border: none;
+}
+
+span {
+    float: right;
+    font-size: 15px;
+}
+
+button {
+    transition: 0.10s;
+}
+
+button:hover {
+    transform: translateY(-5px);
+}
+
+a {
+    color: rgb(255, 255, 255) !important;
+    font-size: 14px !important;
+}
+
+.pagination .page-item .page-link {
+    background-color: rgb(53, 107, 255);
+    border: solid 1px blue;
+}
+
+#footer {
+    padding: 0;
+}
+#show{
+    float: right;
 }

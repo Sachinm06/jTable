@@ -15,18 +15,24 @@
 
     <div class="container mt-5">
         <div class="table-responsive-sm">
-            <table class="table table-bordered table-striped table-hover table-sm">
-                <thead class="text-white table-borderless right-borderless">
+            <table class="table table-bordered table-striped table-hover table-sm ">
+                <thead class="text-white table-borderless">
                     <tr class="sub">
-                        <th colspan="6">Student List</th>
-                        <th colspan="3"> </th>
+                        <th colspan="9">Student List
+                            <span>
+                                <button class="bg-primary text-white"><i
+                                        class="fa-solid fa-file-excel text-white"></i>&nbsp;Export to Excel</button>
+                                <button class="bg-primary text-white"><i
+                                        class="fa-solid fa-plus text-white"></i>&nbsp;Add new record</button>
+                            </span>
+                        </th>
 
                     </tr>
                     <tr class="bg-primary ">
-                        <th class="text-center" colspan="3">Name</th>
-                        <th width="150">City</th>
-                        <th width="150">Birth date</th>
-                        <th width="150">Status</th>
+                        <th class="text-center" colspan="3">Name <span>&#9650;</span></th>
+                        <th width="150">City <span>&#9650;</span></th>
+                        <th width="150">Birth date <span>&#9650;</span></th>
+                        <th width="150">Status <span>&#9650;</span> </th>
                         <th colspan="3">Record date</th>
                     </tr>
                 </thead>
@@ -141,8 +147,54 @@
                         <td><i class="fa-solid fa-pen-to-square"></i></td>
                         <td><i class="fa-solid fa-trash"></i></td>
                     </tr>
-
+                    <tr>
+                        <td id="footer" colspan="9" class=" text-white bg-primary" height="50">
+                            <div class="d-flex">
+                                <nav aria-label="Page navigation class=" d-inline-block"">
+                                    <ul class="pagination pagination-inline border-dark">
+                                        <li class="page-item"><a class="page-link" href="#">
+                                                << </a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">
+                                                < </a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">12</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">13</a></li>
+                                        <li class="page-item"><a class="page-link" href="#"> > </a></li>
+                                        <li class="page-item"><a class="page-link" href="#"> >> </a></li>
+                                    </ul>
+                                </nav>&nbsp;
+                                Go to page: &nbsp;<select name="" id="">
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                    <option value="">5</option>
+                                    <option value="">6</option>
+                                    <option value="">7</option>
+                                    <option value="">8</option>
+                                    <option value="">9</option>
+                                </select>&nbsp;
+                                Row count:&nbsp; <select name="" id="">
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                    <option value="">5</option>
+                                    <option value="">6</option>
+                                    <option value="">7</option>
+                                    <option value="">8</option>
+                                    <option value="">9</option>
+                                </select>&nbsp;
+                                <span id="show">Showing 1-10 of 128</span>
+                            </div>
+                        </td>
+                    </tr>
                 </tbody>
+
             </table>
         </div>
     </div>
