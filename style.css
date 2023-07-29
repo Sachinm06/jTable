@@ -1,0 +1,32 @@
+table {
+    border-collapse: collapse;
+}
+
+th {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 200;
+    border: none !important; 
+
+
+}
+
+td {
+    text-align: left;
+    font-size: 18px;
+    font-weight: 300
+}
+
+i {
+    color: gray;
+
+}
+
+i:hover {
+    color: black;
+}
+
+.sub{
+    background: rgb(58, 58, 255);
+    border: none;
+}
